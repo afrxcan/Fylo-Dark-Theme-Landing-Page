@@ -49,9 +49,6 @@ header {
   justify-content: space-between; /* Pushes items to opposite ends */
   align-items: center;            /* Aligns them vertically in the middle */
   padding: 1.5rem 3rem;           /* Adds breathing room around the edges */
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 3rem;
 }
 
 /* The Navigation List */
@@ -59,24 +56,18 @@ nav ul {
   display: flex;    /* Makes the list items sit in a row */
   list-style: none; /* Removes the bullet points */
   gap: 2rem;        /* Adds space between the links */
-  display: flex;
-  list-style: none;
-  gap: 2rem;
 }
 
 /* The Links */
 nav a {
   text-decoration: none; /* Removes the underline */
-  text-decoration: none;
   color: var(--white);
   opacity: 0.8;          /* Makes them slightly dim */
-  opacity: 0.8;
   transition: opacity 0.3s;
 }
 
 nav a:hover {
   opacity: 1;            /* Brightens them up when you hover */
-  opacity: 1;
   text-decoration: underline;
 }
 
@@ -86,25 +77,18 @@ nav a:hover {
   background-color: var(--intro-bg); /* Slightly lighter blue than the body */
   text-align: center;                /* Centers text and images */
   padding: 3rem 2rem;                /* Adds space inside the box */
-  background-color: var(--intro-bg);
-  text-align: center;
-  padding: 3rem 2rem;
 }
 
 .intro img {
   width: 100%;
   max-width: 500px;      /* Stops the image from getting too huge */
   margin-bottom: 2rem;   /* Space below the image */
-  max-width: 500px;
-  margin-bottom: 2rem;
 }
 
 .intro h1 {
   font-size: 2rem;
   max-width: 600px;      /* Keeps the title from stretching too wide */
   margin: 0 auto 1.5rem; /* "auto" on left/right centers the block */
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
   line-height: 1.4;
 }
 
@@ -117,23 +101,18 @@ nav a:hover {
 
 .intro button {
   background: linear-gradient(to right, var(--cyan), var(--blue)); /* The gradient color! */
-  background: linear-gradient(to right, var(--cyan), var(--blue));
   border: none;
   border-radius: 2rem;   /* Makes the button round (pill shape) */
   padding: 1rem 3rem;    /* Makes the button big and clickable */
-  border-radius: 2rem;
-  padding: 1rem 3rem;
   color: var(--white);
   font-weight: 700;
   cursor: pointer;       /* Shows the hand icon when hovering */
-  cursor: pointer;
   font-size: 1rem;
 }
 
 /* Hover state for all buttons */
 button:hover {
   opacity: 0.8; /* Makes the button slightly transparent/lighter */
-  opacity: 0.8;
   transition: opacity 0.3s;
 }
 
@@ -143,42 +122,34 @@ button:hover {
   padding: 5rem 2rem;
   max-width: 1000px; /* Keeps the grid from getting too wide on huge screens */
   margin: 0 auto;    /* Centers the whole block */
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .feature {
   text-align: center; /* Centers the icon and text */
-  text-align: center;
   padding: 1.5rem;
 }
 
 .feature img {
   margin-bottom: 1.5rem;
   height: 75px;      /* Ensures all icons are the same size */
-  height: 75px;
 }
 
-/* Responsive Grid: Only applies to screens wider than 750px */
+
 @media (min-width: 750px) {
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Creates 2 equal columns */
-    gap: 5rem;                      /* Adds big space between the grid cells */
-    grid-template-columns: 1fr 1fr;
     gap: 5rem;
-  }
+    }
 }
 
 /* Stay Productive Section */
-/* Stay Productive */
 .productive {
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column; /* Stacked on mobile */
-  flex-direction: column;
   align-items: center;
   gap: 3rem;
 }
@@ -206,7 +177,6 @@ button:hover {
   color: var(--cyan);
   text-decoration: none;
   border-bottom: 1px solid var(--cyan); /* Adds a custom underline */
-  border-bottom: 1px solid var(--cyan);
   padding-bottom: 4px;
 }
 
@@ -220,8 +190,6 @@ button:hover {
   .productive {
     flex-direction: row; /* Puts image and text side-by-side */
     text-align: left;    /* Aligns text to the left on desktop */
-    flex-direction: row;
-    text-align: left;
   }
 }
 
@@ -234,17 +202,14 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
   position: relative; /* Creates an anchor point for the quotes */
-  position: relative;
   z-index: 1;
 }
 
 .bg-quotes {
   position: absolute;
   top: 4rem;  /* Moves it to sit just above the first card */
-  top: 4rem;
   left: 2rem;
   z-index: -1; /* Puts it behind the cards */
-  z-index: -1;
   width: 30px;
 }
 
@@ -253,13 +218,11 @@ button:hover {
   background-color: var(--testimonials-bg);
   padding: 2rem;
   border-radius: 0.5rem; /* Slightly rounded corners */
-  border-radius: 0.5rem;
 }
 
 .user-info {
   display: flex;
   align-items: center; /* Lines up the text with the image */
-  align-items: center;
   margin-top: 1.5rem;
   gap: 1rem;
 }
@@ -268,7 +231,6 @@ button:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%; /* This makes the square image a perfect circle! */
-  border-radius: 50%;
 }
 
 .user-info h4 {
@@ -280,12 +242,10 @@ button:hover {
 @media (min-width: 750px) {
   .testimonials {
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .bg-quotes {
     width: 50px; /* Makes it larger on desktop */
-    width: 50px;
     top: 3rem;
     left: 1.5rem;
   }
@@ -299,7 +259,6 @@ button:hover {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 5rem; /* Adds space below it */
-  margin: 0 auto 5rem;
   border-radius: 0.5rem;
 }
 
@@ -314,7 +273,6 @@ button:hover {
 .cta form {
   display: flex;
   flex-direction: column; /* Stacked on mobile */
-  flex-direction: column;
   gap: 1rem;
 }
 
@@ -340,17 +298,14 @@ button:hover {
 @media (min-width: 750px) {
   .cta form {
     flex-direction: row; /* Side by side on desktop */
-    flex-direction: row;
   }
   
   .cta input {
     flex-grow: 1; /* Input stretches to fill the empty space */
-    flex-grow: 1;
   }
   
   .cta button {
     width: auto; /* Button shrinks to fit text */
-    width: auto;
     min-width: 200px;
   }
 }
@@ -386,14 +341,12 @@ footer > img {
 .info-item {
   display: flex;
   align-items: flex-start; /* Aligns icon with the top of the text */
-  align-items: flex-start;
   gap: 1.5rem;
 }
 
 .info-item img {
   width: 18px;
   margin-top: 5px; /* Nudges icon down slightly to match text line-height */
-  margin-top: 5px;
 }
 
 footer ul {
@@ -420,7 +373,6 @@ footer a:hover {
 .social-links {
   display: flex;
   justify-content: center; /* Centers them on mobile */
-  justify-content: center;
   gap: 1rem;
 }
 
@@ -432,7 +384,6 @@ footer a:hover {
   height: 40px;
   border: 1px solid var(--white);
   border-radius: 50%; /* Makes them perfect circles */
-  border-radius: 50%;
   color: var(--white);
   text-decoration: none;
   transition: all 0.3s;
@@ -448,7 +399,6 @@ footer a:hover {
   .footer-content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr; /* Updated to 4 columns */
-    grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 4rem;
   }
 }
